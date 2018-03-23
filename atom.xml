@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://jidk.top/"/>
+  <link href="localhost/"/>
   <updated>2018-03-23T03:51:58.983Z</updated>
-  <id>http://jidk.top/</id>
+  <id>localhost/</id>
   
   <author>
     <name>jidk</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Text</title>
-    <link href="http://jidk.top/2018/03/23/Text/"/>
-    <id>http://jidk.top/2018/03/23/Text/</id>
+    <link href="localhost/2018/03/23/Text/"/>
+    <id>localhost/2018/03/23/Text/</id>
     <published>2018-03-23T03:51:58.000Z</published>
     <updated>2018-03-23T03:51:58.983Z</updated>
     
@@ -32,8 +32,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://jidk.top/2018/03/23/hello-world/"/>
-    <id>http://jidk.top/2018/03/23/hello-world/</id>
+    <link href="localhost/2018/03/23/hello-world/"/>
+    <id>localhost/2018/03/23/hello-world/</id>
     <published>2018-03-23T03:33:14.955Z</published>
     <updated>2018-03-23T03:33:14.955Z</updated>
     
