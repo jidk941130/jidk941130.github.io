@@ -2,12 +2,12 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>jidk&#39;s blog</title>
   
-  
+  <subtitle>The harder you work, the luckier you will be</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="localhost/"/>
+  <link href="jidk.top/"/>
   <updated>2018-03-23T09:38:24.440Z</updated>
-  <id>localhost/</id>
+  <id>jidk.top/</id>
   
   <author>
     <name>jidk</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>半生少年</title>
-    <link href="localhost/2018/03/23/%E5%8D%8A%E7%94%9F%E5%B0%91%E5%B9%B4/"/>
-    <id>localhost/2018/03/23/半生少年/</id>
+    <link href="jidk.top/2018/03/23/%E5%8D%8A%E7%94%9F%E5%B0%91%E5%B9%B4/"/>
+    <id>jidk.top/2018/03/23/半生少年/</id>
     <published>2018-03-23T09:31:01.000Z</published>
     <updated>2018-03-23T09:38:24.440Z</updated>
     
