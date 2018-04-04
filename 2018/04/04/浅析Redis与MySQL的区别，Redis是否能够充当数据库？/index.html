@@ -73,6 +73,8 @@
 
 
 
+  
+
 
   <link rel="alternate" href="/atom.xml" title="jidk's blog" type="application/atom+xml" />
 
@@ -81,17 +83,18 @@
 
 
 
-<meta name="description" content="a web developer&apos;s life">
+<meta name="description" content="我们都知道，MySQL是当下非常流行的关系型数据库，功能强大，但是相对应的，由于其数据存储在磁盘中，在检索时会涉及到I/O处理，导致其访问速度没有那么快。这时，缓存就排上了用场。用户在访问网站时，如果没有命中缓存，再前往数据库查找，把查找到的数据复制到缓存中。实际上这个过程就像是操作系统处理内存和磁盘的关系一样，内存只存放当前运行的部分数据，而磁盘放置主体数据用于持久化存储。因为CPU访问的是">
 <meta name="keywords" content="JAVA WEB developer">
-<meta property="og:type" content="website">
-<meta property="og:title" content="jidk&#39;s blog">
-<meta property="og:url" content="jidk.top/tags/About-me-life/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="浅析Redis与MySQL的区别，Redis是否能够充当数据库？">
+<meta property="og:url" content="jidk.top/2018/04/04/浅析Redis与MySQL的区别，Redis是否能够充当数据库？/index.html">
 <meta property="og:site_name" content="jidk&#39;s blog">
-<meta property="og:description" content="a web developer&apos;s life">
+<meta property="og:description" content="我们都知道，MySQL是当下非常流行的关系型数据库，功能强大，但是相对应的，由于其数据存储在磁盘中，在检索时会涉及到I/O处理，导致其访问速度没有那么快。这时，缓存就排上了用场。用户在访问网站时，如果没有命中缓存，再前往数据库查找，把查找到的数据复制到缓存中。实际上这个过程就像是操作系统处理内存和磁盘的关系一样，内存只存放当前运行的部分数据，而磁盘放置主体数据用于持久化存储。因为CPU访问的是">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-04-04T06:11:51.707Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="jidk&#39;s blog">
-<meta name="twitter:description" content="a web developer&apos;s life">
+<meta name="twitter:title" content="浅析Redis与MySQL的区别，Redis是否能够充当数据库？">
+<meta name="twitter:description" content="我们都知道，MySQL是当下非常流行的关系型数据库，功能强大，但是相对应的，由于其数据存储在磁盘中，在检索时会涉及到I/O处理，导致其访问速度没有那么快。这时，缓存就排上了用场。用户在访问网站时，如果没有命中缓存，再前往数据库查找，把查找到的数据复制到缓存中。实际上这个过程就像是操作系统处理内存和磁盘的关系一样，内存只存放当前运行的部分数据，而磁盘放置主体数据用于持久化存储。因为CPU访问的是">
 
 
 
@@ -121,13 +124,13 @@
 
 
 
-  <link rel="canonical" href="jidk.top/tags/About-me-life/"/>
+  <link rel="canonical" href="jidk.top/2018/04/04/浅析Redis与MySQL的区别，Redis是否能够充当数据库？/"/>
 
 
 
 
 
-  <title>标签: About me,life | jidk's blog</title>
+  <title>浅析Redis与MySQL的区别，Redis是否能够充当数据库？ | jidk's blog</title>
   
 
 
@@ -156,7 +159,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -230,54 +233,144 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>About me,life<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="jidk.top/2018/04/04/浅析Redis与MySQL的区别，Redis是否能够充当数据库？/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="jidk">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="jidk's blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/27/About-me/" itemprop="url">
-              
-                <span itemprop="name">About me</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">浅析Redis与MySQL的区别，Redis是否能够充当数据库？</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-27T13:11:24+08:00"
-              content="2018-03-27" >
-          03-27
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-04T14:10:46+08:00">
+                2018-04-04
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>  我们都知道，MySQL是当下非常流行的关系型数据库，功能强大，但是相对应的，由于其数据存储在磁盘中，在检索时会涉及到I/O处理，导致其访问速度没有那么快。这时，缓存就排上了用场。用户在访问网站时，如果没有命中缓存，再前往数据库查找，把查找到的数据复制到缓存中。实际上这个过程就像是操作系统处理内存和磁盘的关系一样，内存只存放当前运行的部分数据，而磁盘放置主体数据用于持久化存储。因为CPU访问的是内存而非直接访问磁盘，所以保证了操作系统的运行速度。</p>
+<p>  再来看Redis：Redis是缓存技术的一种，并且是驻留在内存中运行的，这大大提升了高数据量WEB访问的速度。Redis提供了许多数据结构，比如Strign、List、Set、HashSet、SortedSet等，使得开发人员在选择数据结构的时候有了更多选择。</p>
+<p>  于是就有人提出了一个疑问，既然Redis具有查询速度快、数据结构丰富的特点，那么是否可以用它来充当数据库呢？在目前看来，我认为答案还是否定的。首先由于Redis采用半持久化的方案，一方面数据安全性没有存储于MySQL高，另一方面当数据量巨大时，如果每次启动Redis时，都会将大量数据加载到内存中，每次备份时又需要将这些数据dump到磁盘中。这对于一个对稳定性和性能有要求的WEB项目而言，是不可想象的。另外，由于Redis是键值对（key-value）数据库，面对key的内存搜索，它的优势明显:它不分表，没有schema，没有索引，没有外键，缺少int/date等基本数据类型，多条件查询需要通过集合内联(sinter,zinterstore)和连接间接实现，操作不便，开发效率低，可维护性不佳。再加上实际项目中很可能会遇到的数据突然暴增、数据架构迁移的场景，Redis暂时没有很好的解决方案。综上，Redis并不是目前合适的数据库替代品。</p>
+<p>  因此，在实际的项目开发过程中，建议将Redis作为高速缓存，数据异步存储到MySQL上。既保证了数据的读写效率问题，又能保证数据的安全性。</p>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/27/About-me/" rel="next" title="About me">
+                <i class="fa fa-chevron-left"></i> About me
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -285,6 +378,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -533,6 +630,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
